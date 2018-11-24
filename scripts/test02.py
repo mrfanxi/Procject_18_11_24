@@ -26,6 +26,6 @@ try:
         driver.install_app(os.getcwd() + os.sep + "AK_CRM.apk")
         print("Install succese!")
 except:
-    pass
+    driver.get_screenshot_as_file("../images/01.png")
 finally:
     driver.quit()
